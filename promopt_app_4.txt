@@ -1,0 +1,42 @@
+Necesito una aplicación en Python con Streamlit para buscar alertas tempranas de clientes.
+
+CONTEXTO DE DATOS:
+- Tengo 3 bases en CSV: alertas_empresas.csv, alertas_pes.csv, alertas_consumo.csv.
+  Cada una tiene las columnas: cedula, nombre, perfil (valores: Bajo, Medio, Alto,
+  Rechazado), perfil_anterior, corte. alertas_pes.csv tiene además una columna
+  "sector", y alertas_consumo.csv tiene además "saldo_pasivo".
+- Estas 3 bases son segmentos de clientes que NO se cruzan: una misma cédula
+  debería aparecer en una sola de las 3 bases.
+- También tengo base_master.csv con el historial mensual de TODAS las empresas:
+  columnas id (texto de 14 dígitos), fecha, cartera_total, dias_mora. Cada id
+  tiene varias filas, una por corte mensual.
+
+NECESITO UNA APP CON 2 PESTAÑAS:
+
+1. "Alertas por cliente": un cuadro de texto para buscar por cédula o nombre.
+   Busca en las 3 bases de alertas.
+   - Si no encuentra nada, mostrar un aviso.
+   - Si el nombre coincide con varios clientes distintos (cédulas distintas),
+     listarlos todos y avisar que hay que precisar con la cédula.
+   - Si la MISMA cédula aparece en más de una de las 3 bases, eso es un error
+     de datos (los segmentos deberían ser excluyentes) — mostrarlo como
+     advertencia visible, no como resultado normal.
+   - Por cada resultado, mostrar: de qué base es, el perfil (con un color
+     distinto por nivel: verde=Bajo, amarillo=Medio, naranja=Alto, rojo=
+     Rechazado), si está estable o cambió respecto al perfil_anterior, y los
+     demás datos del cliente.
+
+2. "Serie histórica": un cuadro de texto para el id de 14 dígitos. Valida que
+   tenga exactamente 14 dígitos numéricos. Busca en base_master.csv y grafica
+   la serie de tiempo de ese cliente: cartera_total y dias_mora, cada una en
+   su propio eje Y (las escalas son muy distintas), ordenado por fecha.
+
+REQUISITOS TÉCNICOS:
+- Streamlit para la interfaz, pandas para leer/filtrar los CSV, matplotlib
+  para el gráfico con doble eje Y.
+- Separar la lógica de negocio (búsqueda, agrupación, validación) en un
+  archivo aparte de la interfaz, para poder probarla sin Streamlit.
+- Un script separado que genere datos de ejemplo ficticios para las 4 bases.
+- Fondo blanco fijo (que no cambie a oscuro aunque el sistema esté en modo
+  oscuro) — usar un archivo .streamlit/config.toml.
+- Código simple y comentado, sin librerías adicionales a las mencionadas.
