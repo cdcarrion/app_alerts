@@ -36,3 +36,12 @@ columnas `cedula`, `nombre`, `perfil`, `perfil_anterior`, `corte` (agrega
 
 **Base master** (`base_master.csv`): columnas `id` (14 dígitos, texto),
 `fecha`, `cartera_total`, `dias_mora` -- una fila por cliente y corte.
+
+
+
+
+Alertas tempranas (PES y Empresas): reviso la estabilidad de perfiles entre cortes y entrego las bases cada mes.
+Monitoreo de perfiles (Preciso, Micro, PES): actualizo los tableros mensuales y redacto las observaciones.
+Perfiles individuales: reviso y justifico el deterioro de clientes cuando llegan solicitudes de modificación de perfil.
+Pronóstico de cartera vencida: corro los modelos y comparo escenarios contra el presupuesto, proyectado a diciembre.
+Reportes de resultados: preparo presentaciones por producto (Preciso, Tarjeta), separando clientes con y sin experiencia.
