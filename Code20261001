@@ -1,0 +1,22 @@
+WITH base_fc AS (
+    SELECT DISTINCT
+           identificacionCliente,
+           Segmentacion      AS Segmentacion_FC,
+           perfilesReglasFA
+    FROM global_temp.AlertaConsumo_052025
+),
+base_6m AS (
+    SELECT DISTINCT
+           identificacionCliente,
+           Segmentacion      AS Segmentacion_6M,
+           perfilesReglasU6M
+    FROM global_temp.AlertaConsumo_052025_6M
+)
+SELECT a.identificacionCliente,
+       a.Segmentacion_FC,
+       a.perfilesReglasFA,
+       b.Segmentacion_6M,
+       b.perfilesReglasU6M
+FROM base_fc a
+LEFT JOIN base_6m b
+       ON a.identificacionCliente = b.identificacionCliente
