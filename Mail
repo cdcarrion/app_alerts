@@ -1,0 +1,38 @@
+Subject: Escenarios de pérdida incurrida por El Niño – corte agosto 2026
+
+Estimados:
+
+Les comparto los escenarios de pérdida incurrida por el Fenómeno de El Niño para las carteras de Microfinanzas, PYMES y Empresas, con saldos a agosto de 2026.
+
+Metodología
+Usamos la metodología del BCE (Apuntes de Economía No. 75, 2024):
+• Pérdida esperada = PD × EAD × LGD (págs. 35-36).
+• En cada escenario la PD sube según el riesgo de la zona y la LGD se mantiene igual (Tabla 9, pág. 39). Por eso: Pérdida El Niño = Pérdida actual + Saldo expuesto × ΔPD × LGD.
+• El aumento de PD se pondera con la distribución de la cartera del sistema por zona de riesgo (pág. 23). LGD: 70% en microcrédito y 40% en productivo (pág. 37).
+• Cartera expuesta: 1,529.8 MM en 142 cantones con influencia directa (sin Quito), con una pérdida actual de 79.4 MM.
+
+Escenarios (pérdida adicional frente a la actual)
+
+1. Moderado (equivale al Niño de 1997-98): la PD sube 6, 5 y 3 pp en zonas de riesgo alto, medio y bajo (4.04 pp ponderado).
+   Microfinanzas +12.7 MM (PI 12.6%), PYMES +5.4 MM (8.2%), Empresas +12.1 MM (3.4%).
+   Total: +30.2 MM.
+
+2. Severo (equivale a las dificultades crediticias de la pandemia): la PD sube 15, 10 y 5 pp (8.06 pp ponderado).
+   Microfinanzas +25.6 MM (PI 15.5%), PYMES +10.8 MM (9.8%), Empresas +24.1 MM (5.0%).
+   Total: +60.5 MM.
+
+3. Crítico (supuesto propio): toda la cartera expuesta se comporta como zona de riesgo alto (+15 pp).
+   Microfinanzas +47.2 MM (PI 20.3%), PYMES +20.0 MM (12.6%), Empresas +44.8 MM (7.8%).
+   Total: +112.0 MM.
+
+El escenario presentado en las láminas combina severo en Microfinanzas, moderado en PYMES y un factor proporcional en Empresas: suma +39.2 MM y queda entre el moderado y el severo.
+
+Consideraciones
+• Mantener la LGD fija tiende a subestimar la pérdida: si la LGD de micro subiera de 70% a 80%, el escenario severo sumaría unos 10 MM más.
+• En Empresas, aplicar los mismos puntos de PD casi triplica su riesgo; por eso en las láminas se usa un factor proporcional del BCE (2.9% en lugar de 5.0%).
+• Usamos la distribución de zonas del sistema y la PI de julio. Conviene confirmar la definición de la zona, porque la exposición de micro y PYMES subió 24% y 19% frente a julio.
+
+Adjunto la presentación, el Excel con las fórmulas y el speech. Quedo atento a sus comentarios.
+
+Saludos,
+[Nombre]
